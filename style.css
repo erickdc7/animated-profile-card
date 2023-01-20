@@ -214,3 +214,24 @@ body {
 .card .content .details .actionBtn button:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 320px) {
+  .card:hover .imgBx {
+    width: 200px;
+    height: 200px;
+  }
+
+  .card:hover .content .details {
+    transform: translateY(-30px);
+  }
+
+  .card .content .details {
+    padding: 15px;
+    transform: translateY(180px);
+  }
+
+  .card .content .details .actionBtn {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
